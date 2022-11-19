@@ -1,0 +1,136 @@
+body{
+    margin: 0px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+}
+
+.quizHead{ 
+width: 1110px;
+height: 142px;
+background-color: #222;
+color: aliceblue;
+margin-top: 8px;
+}
+
+.topHead {
+    height: 63px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.logo {
+    background-image: url(/assets/images/Songbird_Logo.png);
+    width: 200px;
+    height: 55px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.score{
+    width: 65px;
+    height: 55px;
+    font-size: 1.17rem;
+}
+
+.classBird {
+    background-color: #008966;
+    display: flex;
+    height: 33px;
+    list-style: none;
+    border-radius: 5px;
+    padding-left: 0px;
+    justify-content: center;
+    gap: 70px;
+}
+
+.classList{
+    margin-top: 5px;
+}
+
+.classItem {
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 9px;
+    width: 133px;
+    height: 18px;
+    margin-right: auto;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/**========quiz================ **/
+
+.quizMain{
+    background-color: #303030;
+    width: 1078px;
+    height: 187px;
+    padding: 15px;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.quizImg{
+    width: 200px;
+    height: 155px;
+}
+
+.quiz{
+    list-style: none;
+    width: calc(100%);
+    
+}
+
+.quizName h3 {
+    color: white;
+    font-size: 2rem;
+    margin: 0px;
+    border-bottom: 1px solid #222
+}
+
+.quizVoice {
+    margin-top: 20px;
+}
+
+/**========options========= **/
+
+.answer {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.options{
+    background-color: #303030;
+    width: 540px;
+    height: 305px;
+    list-style: none;
+    margin: 0px;
+    padding: 20px;
+}
+
+.navOptions{
+    flex-direction: column;
+}
+
+.optionsBird{
+    border: 1px solid #555;
+    
+}
+
+
+.otvet{
+    background-color: #303030;
+    width: 540px;
+    height: 305px;
+    margin: 0px;
+}
+
+button{
+    width: 100%;
+    margin: 25px 15px;
+    background-color: #303030;
+    border: 1px solid #444;
+    color: #fff!important;
+}

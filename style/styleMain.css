@@ -1,0 +1,88 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{ 
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header { 
+    width: 100%;
+    height: 100px;
+    background-color: #222;
+    display: flex;
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+    background-image: url(/assets/images/Songbird_Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+}
+
+.navPage{
+   list-style: none;
+   font-size: 40px;
+}
+
+.navPage a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/images/mountain-peak-birds-horizon-digital-art\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex: 1 1 auto;
+}
+
+
+
+
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.git img { 
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rsShool img { 
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+/**=============================quiz================================= */
