@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style/styleQuiz.css" />
+    <link rel="stylesheet" href="../style/styleQuiz.css" />
     <title>Document</title>
   </head>
   <body>
@@ -45,7 +45,7 @@
 
       <div class="quizMain">
 
-        <img class="quizImg" src="/assets/images/bird.jpg" alt="bird"></img>
+        <img class="birdImg" src="/assets/images/bird.jpg" alt="bird"></img>
 
         <ul class="quiz">
           <div class="quizName">
@@ -53,10 +53,7 @@
           </div>
           <div class="quizVoice">
             <audio src="/assets/images/sound.mp3" controls>
-              <!-- <div class="controls">
-                <div class="playButton">
-                </div>
-              </div> -->
+
             </audio>
           </div>
         </ul>
@@ -66,22 +63,69 @@
         <div class="answer">
           <div class="options">
              <nav class="navOptions">
-              <li class="optionsBird"></li>
-              <li class="optionsBird"></li>
-              <li class="optionsBird"></li>
-              <li class="optionsBird"></li>
-              <li class="optionsBird"></li>
-              <li class="optionsBird"></li>
+
+               <li class="optionsBird" id="1">
+                <span class="span"></span>
+                <!-- Ворон -->
+              </li>
+              
+              <li class="optionsBird" id="2">
+                <span class="span"></span>
+                Журавль
+              </li>
+
+              <li class="optionsBird">
+                <span class="span"></span>
+                Ласточка
+              </li>
+
+              <li class="optionsBird">
+                <span class="span"></span> 
+                Козодой
+              </li>
+
+              <li class="optionsBird">
+                <span class="span"></span>
+                Кукушка
+              </li>
+
+              <li class="optionsBird">
+                <span class="span"></span>
+                Синица
+              </li>
+
              </nav>
           </div>
 
-          <div class="otvet"></div>
+          <div class="answer">
+            <div class="options">
+              <div class="birdDetalisCard">
+                <p class="statrText">Послушайте плеер. <br>
+                  Выберите птицу из списка  
+                </p>
+                <div class="selectedOption">
+                  <img class="birdImg" src="../assets/images/bird.jpg" alt="bird">
+                  <ul class="selectedUl">
+                    <li class="selectedName"><h4>Кукушка</h4></li>
+                    <li class="selectedDwells">Горы</li>
+                    <li class="selectedVoice">
+                      <audio class="quizVoice" src="/assets/images/sound.mp3" controls></audio>
+                    </li>
+                  </ul>
+                </div>
+                <div class="textBird">
+                
+                </div>
+              </div>
+            </div>
+          </div>
 
 
-          <button>Next Level</button>
+          <button class="button">Next Level</button>
 
         </div>
 
     </div>
+    <script type="module" src="/js/quiz.js"></script>
   </body>
 </html>
