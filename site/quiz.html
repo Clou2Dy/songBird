@@ -21,7 +21,7 @@
         </div>
 
         <nav class="classBird">
-          <li class="classList">
+          <li class="classList active">
             <a class="classItem" href="#">Разминка</a>
           </li>
           <li class="classList">
@@ -45,14 +45,14 @@
 
       <div class="quizMain">
 
-        <img class="birdImg" src="/assets/images/bird.jpg" alt="bird"></img>
+        <img class="birdImg mainBird" src="../assets/images/bird.jpg" alt="bird"></img>
 
         <ul class="quiz">
           <div class="quizName">
-            <h3>*****</h3>
+            <h3 class="mainName">*****</h3>
           </div>
           <div class="quizVoice">
-            <audio src="/assets/images/sound.mp3" controls>
+            <audio class="auto" src="../assets/images/sound.mp3" controls>
 
             </audio>
           </div>
@@ -64,34 +64,34 @@
           <div class="options">
              <nav class="navOptions">
 
-               <li class="optionsBird" id="1">
-                <span class="span"></span>
-                <!-- Ворон -->
+               <li class="optionsBird" id="0">
+                 <span class="span" id="0"></span>
+                 <p class="nameBird" id="0"></p>
               </li>
               
+              <li class="optionsBird" id="1">
+                <span class="span" id="1"></span>
+                <p class="nameBird" id="1"></p>
+              </li>
+
               <li class="optionsBird" id="2">
-                <span class="span"></span>
-                Журавль
+                <span class="span" id="2"></span>
+                <p class="nameBird" id="2"></p>
               </li>
 
-              <li class="optionsBird">
-                <span class="span"></span>
-                Ласточка
+              <li class="optionsBird" id="3">
+                <span class="span" id="3"></span> 
+                <p class="nameBird" id="3"></p>
               </li>
 
-              <li class="optionsBird">
-                <span class="span"></span> 
-                Козодой
+              <li class="optionsBird" id="4">
+                <span class="span" id="4"></span>
+                <p class="nameBird" id="4"></p>
               </li>
 
-              <li class="optionsBird">
-                <span class="span"></span>
-                Кукушка
-              </li>
-
-              <li class="optionsBird">
-                <span class="span"></span>
-                Синица
+              <li class="optionsBird" id="5">
+                <span class="span" id="5"></span>
+                <p class="nameBird" id="5"></p>
               </li>
 
              </nav>
@@ -100,21 +100,24 @@
           <div class="answer">
             <div class="options">
               <div class="birdDetalisCard">
-                <p class="statrText">Послушайте плеер. <br>
+                <p class="startText">Послушайте плеер. <br>
                   Выберите птицу из списка  
                 </p>
                 <div class="selectedOption">
-                  <img class="birdImg" src="../assets/images/bird.jpg" alt="bird">
-                  <ul class="selectedUl">
-                    <li class="selectedName"><h4>Кукушка</h4></li>
-                    <li class="selectedDwells">Горы</li>
-                    <li class="selectedVoice">
-                      <audio class="quizVoice" src="/assets/images/sound.mp3" controls></audio>
-                    </li>
-                  </ul>
-                </div>
-                <div class="textBird">
-                
+                  <div class="blockContent">
+
+                    <img class="birdImg imgBird" src="" alt="bird">
+                    <ul class="selectedUl">
+                      <li class="selectedName"><h4 class="Named">Кукушка</h4></li>
+                      <li class="selectedDwells">Горы</li>
+                      <li class="selectedVoice">
+                        <audio class="quizVoice" id="aud" controls></audio>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="textBird">
+                    
+                  </div>
                 </div>
               </div>
             </div>
@@ -123,9 +126,11 @@
 
           <button class="button">Next Level</button>
 
+          <audio class="neprav" src="../assets/images/neprav.mp3"></audio>
+          <audio class="prav" src="../assets/images/prav.mp3"></audio>
         </div>
 
     </div>
-    <script type="module" src="/js/quiz.js"></script>
+    <script type="module" src="../js/quiz.js"></script>
   </body>
 </html>

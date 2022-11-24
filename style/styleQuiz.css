@@ -27,7 +27,7 @@ margin-top: 8px;
 }
 
 .logo {
-    background-image: url(/assets/images/Songbird_Logo.png);
+    background-image: url(../assets/images/Songbird_Logo.png);
     width: 200px;
     height: 55px;
     background-size: contain;
@@ -143,6 +143,7 @@ margin-top: 8px;
     padding: 0.85rem 1.25rem;
     background-color: #303030;
     color: white;
+    display: flex;
 }
 
 .optionsBird:first-child {
@@ -155,6 +156,11 @@ margin-top: 8px;
     border-bottom-right-radius: 0.25rem;
 }
 
+.nameBird{
+    margin: 0;
+    width: 475px;
+}
+
 .span {
     height: 10px;
     width: 10px;
@@ -162,6 +168,7 @@ margin-top: 8px;
     border-radius: 50%;
     display: inline-block;
     margin-right: 10px;
+    margin-top: 4px;
   }
 
 .spanFall{
@@ -180,7 +187,7 @@ margin-top: 8px;
     color: white;
     font-size: 1.2rem;
     font-weight: 400;
-    /* display: none; */
+    display: block;
 }
 
 .birdDetalisCard{
@@ -196,8 +203,13 @@ margin-top: 8px;
     height: 181px;
     margin: 0px;
     padding: 5px 5px 0 5px;
-    display: flex;
     display: none;
+    
+}
+
+.blockContent { 
+    display: flex;
+    
 }
 
 .selectedUl{
@@ -234,11 +246,17 @@ h4{
     margin-right: 25px;
     background-color: #303030;
     border: 1px solid #444;
-    color: #fff!important;
+    color: #fff;
     border-radius: 0.25rem;
     font-size: 15px;
 }
 
 .buttonActive{
     background-color: #008966;
+}
+
+
+
+span{
+    z-index: 5;
 }
